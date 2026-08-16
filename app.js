@@ -48,51 +48,34 @@ if (canvas) {
     }
   }, { passive: true });
 
-  class AuroraOrb {
-    constructor(color, radius, vx, vy) {
+  class Star {
+    constructor() {
       this.x = Math.random() * width;
       this.y = Math.random() * height;
-      this.vx = vx;
-      this.vy = vy;
-      this.radius = radius;
-      this.color = color;
-      this.pulse = Math.random() * Math.PI * 2;
+      this.size = Math.random() * 1.5 + 0.5;
+      this.vx = (Math.random() - 0.5) * 0.5;
+      this.vy = (Math.random() - 0.5) * 0.5;
+      this.opacity = Math.random();
     }
 
     update() {
       this.x += this.vx;
       this.y += this.vy;
-      this.pulse += 0.015;
 
-      if (this.x < -this.radius || this.x > width + this.radius) this.vx *= -1;
-      if (this.y < -this.radius || this.y > height + this.radius) this.vy *= -1;
+      if (this.x < 0 || this.x > width) this.vx *= -1;
+      if (this.y < 0 || this.y > height) this.vy *= -1;
     }
 
     draw() {
-      const scale = isMobile ? 0.55 : 1;
-      const currentRadius = (this.radius + Math.sin(this.pulse) * 30) * scale;
-      const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, currentRadius);
-      gradient.addColorStop(0, this.color);
-      gradient.addColorStop(1, 'rgba(3, 5, 9, 0)');
-
       ctx.beginPath();
-      ctx.arc(this.x, this.y, currentRadius, 0, Math.PI * 2);
-      ctx.fillStyle = gradient;
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
       ctx.fill();
     }
   }
 
-  const orbs = [
-    new AuroraOrb('rgba(0, 242, 254, 0.18)', 280, 0.35, 0.25),
-    new AuroraOrb('rgba(255, 0, 127, 0.14)', 320, -0.25, 0.35)
-  ];
-
-  if (!isMobile) {
-    orbs.push(
-      new AuroraOrb('rgba(121, 40, 202, 0.16)', 360, 0.25, -0.25),
-      new AuroraOrb('rgba(0, 242, 254, 0.12)', 260, -0.3, -0.2)
-    );
-  }
+  const numStars = isMobile ? 50 : 150;
+  const stars = Array.from({ length: numStars }, () => new Star());
 
   function animateCanvas(timestamp) {
     requestAnimationFrame(animateCanvas);
@@ -105,47 +88,27 @@ if (canvas) {
 
     ctx.clearRect(0, 0, width, height);
 
-    mouse.x += (mouse.targetX - mouse.x) * 0.06;
-    mouse.y += (mouse.targetY - mouse.y) * 0.06;
-
-    orbs.forEach((orb) => {
-      orb.update();
-      orb.draw();
+    stars.forEach((star) => {
+      star.update();
+      star.draw();
     });
 
-    if (mouse.active && !isMobile) {
-      const mouseGradient = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 200);
-      mouseGradient.addColorStop(0, 'rgba(0, 242, 254, 0.18)');
-      mouseGradient.addColorStop(0.5, 'rgba(255, 0, 127, 0.08)');
-      mouseGradient.addColorStop(1, 'rgba(3, 5, 9, 0)');
+    // Draw connecting lines if stars are close
+    for (let i = 0; i < stars.length; i++) {
+      for (let j = i + 1; j < stars.length; j++) {
+        const dx = stars[i].x - stars[j].x;
+        const dy = stars[i].y - stars[j].y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
 
-      ctx.beginPath();
-      ctx.arc(mouse.x, mouse.y, 200, 0, Math.PI * 2);
-      ctx.fillStyle = mouseGradient;
-      ctx.fill();
-    }
-
-    // 3D Perspective Cyber Grid Lines
-    const horizon = height * 0.65;
-    ctx.strokeStyle = 'rgba(0, 242, 254, 0.06)';
-    ctx.lineWidth = 1;
-
-    const yStep = isMobile ? 36 : 24;
-    for (let y = horizon; y < height; y += yStep) {
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(width, y);
-      ctx.stroke();
-    }
-
-    const numLines = isMobile ? 10 : 18;
-    const centerX = width / 2;
-    for (let i = 0; i <= numLines; i++) {
-      const x = (width / numLines) * i;
-      ctx.beginPath();
-      ctx.moveTo(centerX + (x - centerX) * 0.15, horizon);
-      ctx.lineTo(x, height);
-      ctx.stroke();
+        if (distance < 100) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 - distance / 1000})`;
+          ctx.lineWidth = 0.5;
+          ctx.moveTo(stars[i].x, stars[i].y);
+          ctx.lineTo(stars[j].x, stars[j].y);
+          ctx.stroke();
+        }
+      }
     }
   }
 
@@ -418,4 +381,45 @@ if (modalOverlay) {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
+
+
+// --- Typewriter Effect ---
+const typewriterRoles = ["Full-Stack Dev", "MERN-Stack Dev", "AI Integration", "WordPress Dev", "Shopify Dev", "Graphic Designing", "Digital Marketing"];
+let currentRoleIndex = 0;
+let currentCharIndex = 0;
+let isDeleting = false;
+const typewriterElement = document.querySelector(".typewriter");
+
+function typeWriter() {
+  if (!typewriterElement) return;
+  
+  const currentRole = typewriterRoles[currentRoleIndex];
+  
+  if (isDeleting) {
+    typewriterElement.textContent = currentRole.substring(0, currentCharIndex - 1);
+    currentCharIndex--;
+  } else {
+    typewriterElement.textContent = currentRole.substring(0, currentCharIndex + 1);
+    currentCharIndex++;
+  }
+
+  let typeSpeed = isDeleting ? 40 : 120;
+
+  if (!isDeleting && currentCharIndex === currentRole.length) {
+    typeSpeed = 1500; // pause at end
+    isDeleting = true;
+  } else if (isDeleting && currentCharIndex === 0) {
+    isDeleting = false;
+    currentRoleIndex = (currentRoleIndex + 1) % typewriterRoles.length;
+    typeSpeed = 400; // pause before next word
+  }
+
+  setTimeout(typeWriter, typeSpeed);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", typeWriter);
+} else {
+  typeWriter();
+}
 

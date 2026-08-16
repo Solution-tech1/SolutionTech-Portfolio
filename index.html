@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=16.0" />
+    <link rel="stylesheet" href="main-v2.css" />
   </head>
   <body>
     <canvas id="particleCanvas"></canvas>
@@ -18,50 +18,43 @@
     
     <header class="site-header">
       <a href="index.html" class="brand">
-        <img src="solution tech logo.png" alt="Solution Tech logo" class="brand-logo" />
-        <span>Solution Tech</span>
+        <span class="brand-text">Solution Tech</span>
       </a>
       <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="team.html">Team</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -2px;"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zM704 868V614.3H320V868h-72V536h528v332h-72z"></path></svg> Home</a>
+        <a href="about.html"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -2px;"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> About</a>
+        <a href="projects.html"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -2px;"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 0 0-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg> Projects</a>
+        <a href="team.html"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -2px;"><path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-600 72h560v208H232V136zm560 480H232V408h560v208zm0 272H232V680h560v208zM304 240h416v-48H304v48zm0 272h416v-48H304v48zm0 272h416v-48H304v48z"></path></svg> Team</a>
+        <a href="contact.html"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -2px;"><path d="M904 512h-56c-4.4 0-8 3.6-8 8v320H184V184h320c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V520c0-4.4-3.6-8-8-8z"></path></svg> Contact</a>
+        <a href="https://github.com/raoraza12" target="_blank" class="fork-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </a>
       </nav>
     </header>
 
     <main class="page-shell">
       <section class="hero reveal">
         <div class="hero-copy">
-          <p class="eyebrow">🟢 Solution Tech • Full-Stack Agency</p>
-          <h1>Engineering Web Applications, AI Integrations & Digital Products.</h1>
-          <p class="hero-text">
-            We build high-performance MERN stack apps, AI document workflows, e-commerce portals, and enterprise websites designed for scale and business growth.
-          </p>
+          <h2 class="hero-greeting">Welcome! <span class="wave">👋</span></h2>
+          <h1 class="hero-name">WE ARE <span class="highlight-purple">SOLUTION TECH</span></h1>
+          <h2 class="hero-role"><span class="typewriter"></span><span class="cursor">|</span></h2>
           <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary">Explore Featured Projects ↗</a>
-            <a href="contact.html" class="btn btn-secondary">Start a Project</a>
+            <a href="projects.html" class="btn btn-primary">Projects</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
           </div>
         </div>
 
-        <div class="hero-card hero-visual-card">
+        <div class="hero-visual-card">
           <img
-            class="hero-visual"
-            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80"
-            alt="Modern web software engineering setup with dual monitors and code editor"
+            class="hero-visual float-anim"
+            src="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/src/Assets/home-main.svg"
+            alt="Web Developer Setup"
+            style="max-height: 450px; padding: 2rem;"
           />
-          <div class="hero-card-content">
-            <div class="card-badge">Our Core Expertise</div>
-            <h3><span class="card-icon">⚡</span> High-speed engineering, AI capabilities & production reliability.</h3>
-            <ul class="feature-list">
-              <li>Full-Stack Web & MERN App Development</li>
-              <li>AI API Integration & RAG Workflows</li>
-              <li>High-Converting E-Commerce & Corporate Sites</li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -152,17 +145,17 @@
 
       <section class="info-grid reveal">
         <article class="info-card">
-          <img class="card-media" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=900&q=80" alt="UI/UX design system wireframes and strategy board" />
-          <h3><span class="card-icon">✦</span> Design-led thinking</h3>
+          <img class="card-media" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=1920&q=100" alt="UI/UX design system wireframes and strategy board" />
+          <h3><span class="card-icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span> Design-led thinking</h3>
           <p>Every experience is shaped with clarity, balance, and purpose.</p>
         </article>
         <article class="info-card">
-          <img class="card-media" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=900&q=80" alt="Modern agency team collaboration on client project" />
+          <img class="card-media" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1920&q=100" alt="Modern agency team collaboration on client project" />
           <h3><span class="card-icon">◎</span> Built for clients</h3>
           <p>We focus on smooth communication, clean execution, and a strong final experience.</p>
         </article>
         <article class="info-card">
-          <img class="card-media" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="Cloud server infrastructure and scalable technology network" />
+          <img class="card-media" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=100" alt="Cloud server infrastructure and scalable technology network" />
           <h3><span class="card-icon">⬢</span> Ready to scale</h3>
           <p>Our work is built to support growth, iteration, and long-term impact.</p>
         </article>
@@ -194,26 +187,8 @@
         </div>
         <div class="services-grid">
           <article class="service-card">
-            <img class="card-media" src="https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=900&q=80" alt="Brand identity design guidelines and creative strategy" />
-            <div class="card-icon">🧠</div>
-            <h3>Strategy & Branding</h3>
-            <p>Clear positioning, messaging, and brand direction for modern growth.</p>
-          </article>
-          <article class="service-card">
-            <img class="card-media" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=80" alt="Futuristic UI UX web application design dashboard" />
-            <div class="card-icon">🎨</div>
-            <h3>UI/UX Design</h3>
-            <p>Elegant interfaces designed for clarity, trust, and effortless interaction.</p>
-          </article>
-          <article class="service-card">
-            <img class="card-media" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Full stack web development code editor with JavaScript React" />
-            <div class="card-icon">💻</div>
-            <h3>Web Development</h3>
-            <p>Fast, responsive websites and web apps built with modern tools.</p>
-          </article>
-          <article class="service-card">
-            <img class="card-media" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="Artificial intelligence neural network and automated AI concept" />
-            <div class="card-icon">⚙️</div>
+            <img class="card-media" src="https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1920&q=100" alt="Brand identity design guidelines and creative strategy" />
+            <div class="card-icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
             <h3>AI Solutions</h3>
             <p>Smart experiences powered by automation, chat, and intelligent workflows.</p>
           </article>
@@ -292,6 +267,11 @@
       <span>Quick WhatsApp Chat</span>
     </a>
 
-    <script src="script.js?v=16.0"></script>
+    <script src="app.js"></script>
   </body>
 </html>
+
+
+
+
+
