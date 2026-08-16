@@ -1,9 +1,9 @@
 # Solution Tech — Digital Studio & Agency Portfolio
 
-![Solution Tech Banner](https://solution-tech-portfolio.vercel.app/solution%20tech%20logo.png)
+![Solution Tech Banner](https://raoraza12.github.io/solution-tech-portfolio//solution%20tech%20logo.png)
 
 > **Live Website URL (Clean Production Link)**:  
-> 🌐 **[https://solution-tech-portfolio.vercel.app](https://solution-tech-portfolio.vercel.app)**
+> 🌐 **[https://raoraza12.github.io/solution-tech-portfolio/](https://raoraza12.github.io/solution-tech-portfolio/)**
 
 ---
 
@@ -31,7 +31,7 @@ Solution Tech is an engineering-driven digital agency team based in Karachi, Pak
 
 ## 📄 Featured Live Projects
 
-1. **Nexus AI** — Interactive AI E-Book Reader & Assistant Platform (`https://solution-tech-portfolio.vercel.app/projects.html`)
+1. **Nexus AI** — Interactive AI E-Book Reader & Assistant Platform (`https://raoraza12.github.io/solution-tech-portfolio//projects.html`)
 2. **HealthMate Wellness** — AI Telehealth & Consultation Hub
 3. **Study Al Quran** — Global Islamic Learning Portal (`https://studyalquran.com`)
 4. **CellsPart Store** — High-Volume E-Commerce Platform (`https://cellspart.com`)
@@ -50,3 +50,4 @@ python -m http.server 8000
 Open `http://localhost:8000` in your browser.
 
 © 2026 Solution Tech. All rights reserved.
+
