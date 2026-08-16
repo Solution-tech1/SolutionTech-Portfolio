@@ -384,7 +384,7 @@ document.addEventListener('keydown', (e) => {
 
 
 // --- Typewriter Effect ---
-const typewriterRoles = ["Full-Stack Dev", "MERN-Stack Dev", "AI Integration", "WordPress Dev", "Shopify Dev", "Graphic Designing", "Digital Marketing"];
+const typewriterRoles = ["Full-Stack Developer", "MERN-Stack Developer", "AI Integration", "WordPress Developer", "Shopify Developer", "Graphic Designing", "Digital Marketing"];
 let currentRoleIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
@@ -422,4 +422,5 @@ if (document.readyState === "loading") {
 } else {
   typeWriter();
 }
+
 
