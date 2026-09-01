@@ -13,7 +13,7 @@ Solution Tech is an engineering-driven digital agency team based in Karachi, Pak
 
 ### 👥 Agency Team Members
 1. **M Raza** — CEO & Full Stack Lead (AI Integration)
-2. **Abdul Rafay** — MERN Stack Developer (Node.js & MongoDB)
+2. **Abdul Rafay** — Graphic Designer (UI/UX, Branding)
 3. **Ghazi** — CMS Developer & Visual Architect (Webflow, Framer, WP)
 4. **Aliyan** — Frontend Developer & Growth Marketer (React, Tailwind, SEO)
 5. **Abdul Rehman** — MERN Stack Developer (Core Logic & UI/UX Design)
