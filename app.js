@@ -93,23 +93,7 @@ if (canvas) {
       star.draw();
     });
 
-    // Draw connecting lines if stars are close
-    for (let i = 0; i < stars.length; i++) {
-      for (let j = i + 1; j < stars.length; j++) {
-        const dx = stars[i].x - stars[j].x;
-        const dy = stars[i].y - stars[j].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < 100) {
-          ctx.beginPath();
-          ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 - distance / 1000})`;
-          ctx.lineWidth = 0.5;
-          ctx.moveTo(stars[i].x, stars[i].y);
-          ctx.lineTo(stars[j].x, stars[j].y);
-          ctx.stroke();
-        }
-      }
-    }
+    // Draw smooth ambient starfield without CPU-heavy distance loops
   }
 
   requestAnimationFrame(animateCanvas);
@@ -339,6 +323,20 @@ const projectData = {
       'Optimized image loading and responsive luxury layout'
     ],
     link: 'https://luxe-brand.vercel.app/'
+  },
+  salt_n_pepper: {
+    title: "Salt 'n Pepper Gourmet Dining & Delivery",
+    tag: 'Full-Stack Web App & Restaurant Platform',
+    media: 'assets/projects/salt_n_pepper_ui.jpg',
+    desc: "A modern, high-converting digital restaurant platform engineered for Salt 'n Pepper featuring gourmet grill menus, online food ordering, table reservations, and real-time delivery tracking.",
+    tech: 'React.js, Next.js, Node.js, Express, MongoDB, Tailwind CSS',
+    highlights: [
+      'Interactive digital gourmet menu with instant filtering & cart selection',
+      'Seamless online table reservation system with guest confirmation',
+      'Real-time order status tracking and customer account portal',
+      'Ultra-responsive mobile layout optimized for fast sub-second loads'
+    ],
+    link: 'https://github.com/raoraza12/salt-n-pepper'
   }
 };
 

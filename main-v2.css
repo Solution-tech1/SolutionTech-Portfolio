@@ -1052,6 +1052,7 @@ textarea:focus {
 }
 
 .tech-tag-pill {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1060,12 +1061,41 @@ textarea:focus {
   border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(0, 242, 254, 0.3);
-  /* backdrop-filter: blur(16px); removed for perf */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 0 15px rgba(0, 242, 254, 0.1);
   transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   cursor: pointer;
   flex-shrink: 0;
   transform-style: preserve-3d;
+}
+
+/* Hover Tooltip Badge for Technology Names */
+.tech-tag-pill::after {
+  content: attr(title);
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px) scale(0.85);
+  background: #0b0f1e;
+  color: #38bdf8;
+  border: 1.5px solid #c084fc;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 8px 24px rgba(192, 132, 252, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.tech-tag-pill:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0) scale(1);
 }
 
 .tech-tag-pill svg {
@@ -1077,13 +1107,13 @@ textarea:focus {
 
 .tech-tag-pill:hover {
   border-color: #00f2fe;
-  transform: translateY(-8px) rotateX(10deg) rotateY(-10deg) scale(1.2);
+  transform: translateY(-8px) scale(1.18);
   background: linear-gradient(135deg, rgba(0, 242, 254, 0.25), rgba(255, 0, 127, 0.2));
   box-shadow: 0 20px 40px rgba(0, 242, 254, 0.4), 0 0 25px rgba(255, 0, 127, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .tech-tag-pill:hover svg {
-  transform: translateZ(15px) scale(1.1);
+  transform: scale(1.1);
   filter: drop-shadow(0 10px 20px rgba(0, 242, 254, 0.6));
 }
 

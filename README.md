@@ -249,6 +249,15 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top" align="center">
+      <h3>🍳 Salt 'n Pepper Gourmet Dining</h3>
+      <p>Digital restaurant &amp; online food ordering platform with table reservations &amp; order tracking.</p>
+      <p>
+        <a href="https://github.com/raoraza12/salt-n-pepper">
+          <img src="https://img.shields.io/badge/💻_Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Salt n Pepper Repo" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top" align="center">
       <h3>📖 Nexus AI Interactive Reader</h3>
       <p>Interactive AI e-book platform with real-time conversational assistance.</p>
       <p>
@@ -261,6 +270,8 @@
         </a>
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top" align="center">
       <h3>⚡ Earthy Electronics Store</h3>
       <p>High-performance consumer gadgets e-commerce store with modern checkout.</p>
