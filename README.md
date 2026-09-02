@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- LOGO SECTION (CLEAN - NO BROKEN HEADER API LINK) -->
+<!-- LOGO SECTION -->
 <a href="https://solution-tech1.github.io/SolutionTech-Portfolio/">
   <img src="solution%20tech%20logo.png" width="130" alt="Solution Tech Logo" style="border-radius: 50%;" />
 </a>
@@ -22,31 +22,24 @@
 
 <br/><br/>
 
-<!-- DYNAMIC QUICK ACTION CARDS (NO BASIC FLAT BADGES) -->
-<table align="center">
-  <tr>
-    <td align="center" style="padding: 10px 18px; border: 1px solid #c084fc; border-radius: 8px;">
-      <a href="https://solution-tech1.github.io/SolutionTech-Portfolio/">
-        <b>🌐 Official Live Portfolio</b>
-      </a>
-    </td>
-    <td align="center" style="padding: 10px 18px; border: 1px solid #25D366; border-radius: 8px;">
-      <a href="https://wa.me/923292179603">
-        <b>💬 Chat on WhatsApp</b>
-      </a>
-    </td>
-    <td align="center" style="padding: 10px 18px; border: 1px solid #EA4335; border-radius: 8px;">
-      <a href="mailto:solution.tech.1214@gmail.com">
-        <b>✉️ Email Consultation</b>
-      </a>
-    </td>
-    <td align="center" style="padding: 10px 18px; border: 1px solid #38BDF8; border-radius: 8px;">
-      <a href="https://github.com/Solution-tech1">
-        <b>💻 GitHub Organization</b>
-      </a>
-    </td>
-  </tr>
-</table>
+<!-- QUICK ACTION BUTTON BADGES WITH BRAND LOGOS -->
+<p align="center">
+  <a href="https://solution-tech1.github.io/SolutionTech-Portfolio/">
+    <img src="https://img.shields.io/badge/🌐_Official_Live_Portfolio-6D28D9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://wa.me/923292179603">
+    <img src="https://img.shields.io/badge/💬_WhatsApp_Direct-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:solution.tech.1214@gmail.com">
+    <img src="https://img.shields.io/badge/✉️_Email_Consultation-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Consultation" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Solution-tech1">
+    <img src="https://img.shields.io/badge/💻_GitHub_Organization-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Org" />
+  </a>
+</p>
 
 </div>
 
@@ -259,16 +252,26 @@
       <h3>📖 Nexus AI Interactive Reader</h3>
       <p>Interactive AI e-book platform with real-time conversational assistance.</p>
       <p>
-        <a href="https://nexus-ai-book.vercel.app"><b>[ 🚀 Live Demo ]</b></a> &nbsp;|&nbsp;
-        <a href="https://github.com/Solution-tech1/Nexus-Ai-book"><b>[ 💻 Repo ]</b></a>
+        <a href="https://nexus-ai-book.vercel.app">
+          <img src="https://img.shields.io/badge/🚀_Live_Demo-6D28D9?style=for-the-badge&logo=vercel&logoColor=white" alt="Nexus Demo" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/Solution-tech1/Nexus-Ai-book">
+          <img src="https://img.shields.io/badge/💻_Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Nexus Repo" />
+        </a>
       </p>
     </td>
     <td width="50%" valign="top" align="center">
       <h3>⚡ Earthy Electronics Store</h3>
       <p>High-performance consumer gadgets e-commerce store with modern checkout.</p>
       <p>
-        <a href="https://earthy-electronics.vercel.app/"><b>[ 🚀 Live Demo ]</b></a> &nbsp;|&nbsp;
-        <a href="https://github.com/Solution-tech1/earthy-electronics"><b>[ 💻 Repo ]</b></a>
+        <a href="https://earthy-electronics.vercel.app/">
+          <img src="https://img.shields.io/badge/🚀_Live_Demo-6D28D9?style=for-the-badge&logo=vercel&logoColor=white" alt="Earthy Demo" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/Solution-tech1/earthy-electronics">
+          <img src="https://img.shields.io/badge/💻_Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Earthy Repo" />
+        </a>
       </p>
     </td>
   </tr>
@@ -277,16 +280,26 @@
       <h3>🩺 HealthMate Wellness Portal</h3>
       <p>AI-assisted telehealth &amp; consultation portal with patient tracking.</p>
       <p>
-        <a href="https://healthmate-frontend-five.vercel.app/"><b>[ 🚀 Live Demo ]</b></a> &nbsp;|&nbsp;
-        <a href="https://github.com/Solution-tech1/HealthMate"><b>[ 💻 Repo ]</b></a>
+        <a href="https://healthmate-frontend-five.vercel.app/">
+          <img src="https://img.shields.io/badge/🚀_Live_Demo-6D28D9?style=for-the-badge&logo=vercel&logoColor=white" alt="HealthMate Demo" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/Solution-tech1/HealthMate">
+          <img src="https://img.shields.io/badge/💻_Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="HealthMate Repo" />
+        </a>
       </p>
     </td>
     <td width="50%" valign="top" align="center">
       <h3>👗 Drakewears Clothing Brand</h3>
       <p>Full-stack modern fashion e-commerce store with complete CRUD and secure routing.</p>
       <p>
-        <a href="https://luxe-brand.vercel.app/"><b>[ 🚀 Live Demo ]</b></a> &nbsp;|&nbsp;
-        <a href="https://github.com/Solution-tech1/drakewears"><b>[ 💻 Repo ]</b></a>
+        <a href="https://luxe-brand.vercel.app/">
+          <img src="https://img.shields.io/badge/🚀_Live_Demo-6D28D9?style=for-the-badge&logo=vercel&logoColor=white" alt="Drakewears Demo" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/Solution-tech1/drakewears">
+          <img src="https://img.shields.io/badge/💻_Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Drakewears Repo" />
+        </a>
       </p>
     </td>
   </tr>
@@ -295,14 +308,18 @@
       <h3>🏊 6Star Pools Australia</h3>
       <p>Premier Australian pool construction &amp; maintenance web platform.</p>
       <p>
-        <a href="https://6starpools.au/"><b>[ 🚀 Live Demo ]</b></a>
+        <a href="https://6starpools.au/">
+          <img src="https://img.shields.io/badge/🚀_Live_Demo-6D28D9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="6Star Demo" />
+        </a>
       </p>
     </td>
     <td width="50%" valign="top" align="center">
       <h3>✨ Aspect Cleaning Australia</h3>
       <p>Modern commercial &amp; residential cleaning services platform.</p>
       <p>
-        <a href="https://aspectwindowcleaning.com.au/"><b>[ 🚀 Live Demo ]</b></a>
+        <a href="https://aspectwindowcleaning.com.au/">
+          <img src="https://img.shields.io/badge/🚀_Live_Demo-6D28D9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Aspect Demo" />
+        </a>
       </p>
     </td>
   </tr>
@@ -326,10 +343,18 @@
 
 <br/>
 
-<p>
-  <b>📞 WhatsApp:</b> <a href="https://wa.me/923292179603">+92 329 2179603</a> &nbsp;&bull;&nbsp;
-  <b>✉️ Email:</b> <a href="mailto:solution.tech.1214@gmail.com">solution.tech.1214@gmail.com</a> &nbsp;&bull;&nbsp;
-  <b>🌐 Portfolio:</b> <a href="https://solution-tech1.github.io/SolutionTech-Portfolio/">Live Website</a>
+<p align="center">
+  <a href="https://wa.me/923292179603">
+    <img src="https://img.shields.io/badge/WhatsApp_Direct-+92_329_2179603-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Direct" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:solution.tech.1214@gmail.com">
+    <img src="https://img.shields.io/badge/Direct_Email-solution.tech.1214%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Direct Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://solution-tech1.github.io/SolutionTech-Portfolio/">
+    <img src="https://img.shields.io/badge/Official_Portfolio-solution--tech1.github.io-6D28D9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio Link" />
+  </a>
 </p>
 
 <br/>
