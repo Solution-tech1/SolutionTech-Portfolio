@@ -327,7 +327,7 @@ const projectData = {
     link: 'https://healthmate-frontend-five.vercel.app/'
   },
   luxe: {
-    title: 'Luxe Clothing E-Commerce Store',
+    title: 'Drakewears Clothing E-Commerce Store',
     tag: 'MERN Stack & E-Commerce',
     media: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
     desc: 'A high-performance MERN stack e-commerce web application featuring full CRUD product management, cart & checkout workflows, and optimized sub-second product page rendering.',
