@@ -144,13 +144,13 @@ body::after {
 
 .site-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0.6rem 1.6rem;
+  padding: 1rem 2.5rem;
   margin: 1.2rem auto 0;
-  width: fit-content;
-  max-width: min(var(--max-width), calc(100% - 2rem));
+  width: 100%;
+  max-width: var(--max-width);
   position: sticky;
   top: 1.1rem;
   z-index: 100;
