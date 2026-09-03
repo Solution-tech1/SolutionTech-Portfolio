@@ -80,11 +80,9 @@ if (canvas) {
   function animateCanvas(timestamp) {
     requestAnimationFrame(animateCanvas);
 
-    // Throttle frame rate on mobile to 30FPS for 0% CPU lag
-    if (isMobile) {
-      if (timestamp - lastTime < 32) return;
-      lastTime = timestamp;
-    }
+    // Disable canvas entirely on mobile to prevent hanging
+
+    if (isMobile) { ctx.clearRect(0, 0, width, height); return; }
 
     ctx.clearRect(0, 0, width, height);
 

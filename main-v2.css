@@ -1056,7 +1056,9 @@ textarea:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  padding: 0 1.5rem;
+  width: auto;
+  min-width: 70px;
   height: 70px;
   border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
@@ -1882,4 +1884,109 @@ body .page-shell .section-block:hover {
     border: none !important;
     box-shadow: none !important;
     transform: none !important;
+}
+
+
+/* Creative text hover effect for paragraphs */
+p {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  transform-style: preserve-3d;
+}
+p:hover {
+  transform: translateY(-4px);
+  text-shadow: 0 8px 20px rgba(192, 132, 252, 0.6), 0 0 10px rgba(0, 242, 254, 0.4);
+  color: #fff !important;
+}
+
+/* Team image styling */
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c084fc;
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  margin-bottom: 15px;
+}
+.team-card:hover .avatar-img {
+  transform: scale(1.15) rotate(5deg) translateY(-5px);
+  border-color: #00f2fe;
+  box-shadow: 0 15px 35px rgba(0, 242, 254, 0.6), 0 0 15px rgba(192, 132, 252, 0.4);
+}
+
+
+
+/* --- Responsive & Performance Overrides --- */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+    line-height: 1.1 !important;
+  }
+  h1 { font-size: clamp(1.8rem, 7vw, 2.8rem) !important; }
+  h2 { font-size: clamp(1.5rem, 6vw, 2.2rem) !important; }
+  h3 { font-size: clamp(1.2rem, 5vw, 1.8rem) !important; }
+  
+  .feature-grid, .projects-grid, .team-grid, .info-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  .detail-section {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 1rem !important;
+    min-height: 48px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-header {
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    border-radius: 0 !important;
+    padding: 1rem !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 242, 254, 0.28) !important;
+  }
+  
+  .page-shell {
+    padding-top: 5rem !important;
+  }
+
+  /* Performance overrides */
+  .team-card, .contact-card, .site-header, .stat-card, .service-card, .process-card, .testimonial-card, .panel, .section-block, .projects-intro, .cta-banner, .tech-pill-card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    background: rgba(10, 16, 30, 0.98) !important;
+  }
+  
+  .aurora { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  .tech-tag-pill {
+    padding: 0 1rem !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .tech-marquee-track {
+    gap: 1rem !important;
+  }
 }
