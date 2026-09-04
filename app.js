@@ -324,17 +324,17 @@ const projectData = {
   },
   salt_n_pepper: {
     title: "Salt 'n Pepper Gourmet Dining & Delivery",
-    tag: 'Full-Stack Web App & Restaurant Platform',
+    tag: 'Interactive Luxury Restaurant Web App',
     media: 'assets/projects/salt_n_pepper_ui.jpg',
-    desc: "A modern, high-converting digital restaurant platform engineered for Salt 'n Pepper featuring gourmet grill menus, online food ordering, table reservations, and real-time delivery tracking.",
-    tech: 'React.js, Next.js, Node.js, Express, MongoDB, Tailwind CSS',
+    desc: "A luxury digital restaurant platform engineered for Pakistan's premier hospitality brand, Salt 'n Pepper. Featuring an interactive 3D culinary showcase, dual continuous drifting food rails, dish quick-view modal, dynamic customer feedback rating matrix, and nationwide branch directories.",
+    tech: 'HTML5, Modern CSS3, JavaScript (ES6+), AOS Animations, Responsive Design',
     highlights: [
-      'Interactive digital gourmet menu with instant filtering & cart selection',
-      'Seamless online table reservation system with guest confirmation',
-      'Real-time order status tracking and customer account portal',
-      'Ultra-responsive mobile layout optimized for fast sub-second loads'
+      'Interactive 3D Chef’s food showcase carousel with touch-swipe & auto-rotation',
+      'Dual continuous drifting food rails with live dish inspection & quick-view ordering',
+      'Dynamic customer feedback portal with interactive 5-star rating matrix',
+      'Luxury dark glassmorphism theme, custom design tokens, and mobile drawer navigation'
     ],
-    link: 'https://github.com/raoraza12/salt-n-pepper'
+    link: 'https://raoraza12.github.io/SALT-AND-PEPPER/'
   }
 };
 
