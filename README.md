@@ -252,7 +252,11 @@
       <h3>🍳 Salt 'n Pepper Gourmet Dining</h3>
       <p>Digital restaurant &amp; online food ordering platform with table reservations &amp; order tracking.</p>
       <p>
-        <a href="https://github.com/raoraza12/salt-n-pepper">
+        <a href="https://raoraza12.github.io/SALT-AND-PEPPER/">
+          <img src="https://img.shields.io/badge/🌐_Live_Demo-E60026?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Salt n Pepper Demo" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/raoraza12/SALT-AND-PEPPER">
           <img src="https://img.shields.io/badge/💻_Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Salt n Pepper Repo" />
         </a>
       </p>
