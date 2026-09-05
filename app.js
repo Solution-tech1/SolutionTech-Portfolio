@@ -334,7 +334,7 @@ const projectData = {
       'Dynamic customer feedback portal with interactive 5-star rating matrix',
       'Luxury dark glassmorphism theme, custom design tokens, and mobile drawer navigation'
     ],
-    link: 'https://raoraza12.github.io/SALT-AND-PEPPER/'
+    link: 'https://salt-and-pepper-flax.vercel.app'
   }
 };
 
